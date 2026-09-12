@@ -1,0 +1,31 @@
+WattWatch — Key Energy Findings (SmartCityEnergy.csv, Jan–Jun 2025)
+
+1. Central and North are the city's energy hotspots, consuming ~245,000 kWh and ~261,000 kWh
+   respectively over the period — noticeably higher than South (~184,000 kWh), driven by a
+   denser mix of commercial and industrial meters in those zones.
+
+2. Industrial consumers dominate total usage despite being the smallest group of meters (only
+   ~10% of meters): the top 5 highest-consuming meters are all Industrial, each drawing over
+   8,800 kWh in six months — roughly 4-5x a typical Residential meter.
+
+3. South and East are the least energy-efficient zones, with the highest outage-minutes-per-kWh
+   ratio (0.395 and 0.350 respectively), meaning they lose more reliability for every unit of
+   power delivered compared to Central (0.219) — a strong signal for prioritizing grid
+   maintenance there.
+
+4. A small set of meters is responsible for most reliability problems: the 10 worst-performing
+   meters (concentrated in South, Central, and North) each logged 18-25 separate outage events
+   totaling 2,200-3,200 minutes — these are prime candidates for hardware inspection or
+   replacement.
+
+5. Peak demand is clearly a weekday phenomenon: average peak usage on weekdays (4.18 kWh) is
+   about 27% higher than on weekends (3.28 kWh), consistent with commercial/industrial activity
+   driving the city's load curve.
+
+6. Central has the highest average cost per reading (₹140.37) despite not having the single
+   highest total consumption, because it combines high usage with a higher effective tariff mix
+   — cost-reduction efforts there may have more impact per rupee than in raw-usage-focused zones.
+
+7. Consumption follows a mild seasonal pattern, dipping slightly in February before rising
+   through spring — worth monitoring for correlation with weather/temperature data if available
+   in future iterations.
