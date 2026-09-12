@@ -5,6 +5,7 @@ SQL + Excel analysis of 72K smart-meter readings across 5 city zones — demand,
 An end-to-end SQL + Excel analysis of a simulated smart-city energy grid: 72,400 daily smart-meter readings across 400 meters, 5 zones, and 3 consumer segments, used to answer where energy demand, cost, and grid unreliability actually concentrate.
 
 ---
+<img width="1920" height="1080" alt="Screenshot 2026-09-12 152355" src="https://github.com/user-attachments/assets/9f457045-6c9a-4c9f-a7a3-fc4f2e06b419" />
 
 ## Table of Contents
 
@@ -81,6 +82,7 @@ The project is deliberately split into two layers, mirroring a real workflow: **
 | Central | 70 | 12,127 | 543 |
 
 West has the highest faulty-reading count in absolute terms (711), but this needs to be read against total readings per zone (see Findings #3 for the outage-rate-normalized view, which tells a different story than raw faulty-row counts).
+<img width="817" height="546" alt="Screenshot 2026-09-12 152019" src="https://github.com/user-attachments/assets/aadbc5fa-18f9-4966-8fd0-a0ccfbb1048f" />
 
 ## Repo Structure
 
@@ -180,6 +182,7 @@ FROM SmartCityEnergy
 GROUP BY DayType;
 ```
 `strftime('%w', Date)` returns `0` for Sunday and `6` for Saturday in SQLite. Everything else buckets as weekday.
+<img width="1346" height="495" alt="Screenshot 2026-09-12 152056" src="https://github.com/user-attachments/assets/201cd166-18d0-413e-8db4-a7238c51223e" />
 
 ## Findings
 
